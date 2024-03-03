@@ -1,0 +1,28 @@
+
+
+GET http://localhost:5143/todos
+###
+
+POST  http://localhost:5143/todos/
+content-type: application/json
+
+
+{
+    "id":4,
+    "name":"Trocar",
+    "dueDate":"2023-12-31",
+    "isCompletetd":false
+}
+###
+PUT  http://localhost:5143/todos/4
+content-type: application/json
+
+
+{
+    "id":4,
+    "name":"Trocador",
+    "dueDate":"2023-12-31",
+    "isCompletetd":false
+}
+###
+DELETE  http://localhost:5143/todos/4
